@@ -11,7 +11,7 @@ get_code_info:
   [ 'Foo::Bar', 'new' ]
 */
 
-MODULE = Sub::Identify   PACKAGE = Sub::Identify
+MODULE = Sub::Identify::XS   PACKAGE = Sub::Identify::XS
 
 PROTOTYPES: ENABLE
 
