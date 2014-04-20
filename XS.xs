@@ -18,6 +18,7 @@ PROTOTYPES: ENABLE
 void
 get_code_info(coderef)
     SV* coderef
+    PROTOTYPE: $
     PREINIT:
         char* name;
         char* pkg;
