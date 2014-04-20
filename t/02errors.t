@@ -1,14 +1,9 @@
 #!perl
 
-use Test::More tests => 8;
-use Sub::Identify ':all';
+use Test::More tests => 4;
+use Sub::Identify::XS ':all';
 
-ok( !defined sub_name( undef ) );
-ok( !defined sub_name( "scalar" ) );
-ok( !defined sub_name( \"scalar ref" ) );
-ok( !defined sub_name( \@INC ) );
-
-ok( !defined stash_name( undef ) );
-ok( !defined stash_name( "scalar" ) );
-ok( !defined stash_name( \"scalar ref" ) );
-ok( !defined stash_name( \@INC ) );
+ok( !defined get_code_info( undef ) );
+ok( !defined get_code_info( "scalar" ) );
+ok( !defined get_code_info( \"scalar ref" ) );
+ok( !defined get_code_info( \@INC ) );
